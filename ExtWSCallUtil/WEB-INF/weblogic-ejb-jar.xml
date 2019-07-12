@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weblogic-ejb-jar
+    xmlns="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar http://xmlns.oracle.com/weblogic/weblogic-ejb-jar/1.1/weblogic-ejb-jar.xsd">
+    <weblogic-enterprise-bean>
+        <ejb-name>AQMDB</ejb-name>
+        <message-driven-descriptor>
+            <initial-context-factory>weblogic.jndi.WLInitialContextFactory</initial-context-factory>
+            <connection-factory-jndi-name>AQJMSForeignQCF1</connection-factory-jndi-name>
+            <destination-jndi-name>requestQ</destination-jndi-name>
+        </message-driven-descriptor>
+    </weblogic-enterprise-bean>
+</weblogic-ejb-jar>

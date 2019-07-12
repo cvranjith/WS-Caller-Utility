@@ -1,0 +1,17 @@
+Download apache httpcomponents-client-4.5.6 (https://www-us.apache.org/dist//httpcomponents/httpclient/binary/httpcomponents-client-4.5.6-bin.tar.gz)
+Extract the files into lib folder
+
+
+11/01/2018  08:49 PM    <DIR>          .
+11/01/2018  08:49 PM    <DIR>          ..
+05/02/2015  03:40 AM           284,184 commons-codec-1.10.jar
+05/02/2015  02:36 AM            61,829 commons-logging-1.2.jar
+07/05/2018  07:43 PM            31,528 fluent-hc-4.5.6.jar
+07/05/2018  07:42 PM           767,140 httpclient-4.5.6.jar
+07/05/2018  07:43 PM           161,574 httpclient-cache-4.5.6.jar
+07/05/2018  07:44 PM            17,837 httpclient-win-4.5.6.jar
+06/27/2018  02:36 AM           326,356 httpcore-4.4.10.jar
+07/05/2018  07:43 PM            41,794 httpmime-4.5.6.jar
+05/13/2017  03:55 AM         1,091,208 jna-4.4.0.jar
+05/13/2017  03:55 AM         2,281,814 jna-platform-4.4.0.jar
+              10 File(s)      5,065,264 bytes

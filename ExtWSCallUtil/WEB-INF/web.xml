@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>WSCallerServlet</servlet-name>
+        <servlet-class>com.ofss.fcubs.custom.servlet.WSCallerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WSCallerServlet</servlet-name>
+        <url-pattern>/WSCallerServlet</url-pattern>
+    </servlet-mapping>
+    <security-constraint> 
+		<web-resource-collection> 
+			<web-resource-name>secure</web-resource-name>
+			<url-pattern>/</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>authenticated-users</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<security-role>
+		<description>Authenticated Users</description>
+		<role-name>authenticated-users</role-name>
+	</security-role>
+</web-app>
