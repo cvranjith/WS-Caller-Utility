@@ -149,6 +149,8 @@ static String callWS(Document reqXML) throws Exception
 		logger.debug("WSCallerHandler.callWS: Resp line : " + line);
 		responseStr = responseStr + "\n" + line;
 	}
+	httpClient.close();
+	response.close();
 	return responseStr;
   }
 static Document parseRequest(String requestStr) throws Exception
