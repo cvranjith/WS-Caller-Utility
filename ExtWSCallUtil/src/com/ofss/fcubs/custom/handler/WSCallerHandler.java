@@ -7,10 +7,7 @@ import java.io.ByteArrayInputStream;
 import java.io.StringWriter;
 import java.io.PrintWriter;
 import java.io.Writer;
-import org.apache.http.HttpHeaders;
-import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPut;
@@ -151,6 +148,7 @@ static String callWS(Document reqXML) throws Exception
 	}
 	httpClient.close();
 	response.close();
+	rd.close();
 	return responseStr;
   }
 static Document parseRequest(String requestStr) throws Exception
