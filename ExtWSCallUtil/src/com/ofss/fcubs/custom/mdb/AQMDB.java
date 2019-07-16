@@ -1,22 +1,14 @@
 package com.ofss.fcubs.custom.mdb;
 
-import javax.ejb.MessageDriven;
-import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
-import javax.jms.ConnectionFactory;
-import javax.jms.Destination;
-import javax.jms.Connection;
 import javax.jms.Session;
-import javax.jms.MessageProducer;
 import javax.jms.QueueConnectionFactory;
 import javax.jms.QueueConnection;
 import javax.jms.QueueSession;
 import javax.jms.Queue;
 import javax.jms.QueueSender;
-import javax.ejb.ActivationConfigProperty;
-import javax.annotation.Resource;
 import javax.naming.InitialContext;
 import com.ofss.fcubs.custom.handler.WSCallerHandler;
 
@@ -46,6 +38,7 @@ static void sendResponseToQueue(String responseStr, String msgID) throws Excepti
 	jmsqsender.close();
 	jmsqsession.close();
 	jmsqcon.close();
+	txtMsg=null;
 	logger.debug("AQMDB.sendResponseToQueue: Closed Queue Connection");
   }
 public void onMessage(Message message)
