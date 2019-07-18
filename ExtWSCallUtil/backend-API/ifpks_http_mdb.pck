@@ -48,7 +48,7 @@ begin
 
   return xmlt('WS_REQUEST',
                  (
-                 xmlt('WS_HTTP_VERB',p_http_verb)      ||
+                 xmlt('WS_HTTP_VERB',p_http_verb)          ||
                  xmlt('WS_URL',p_url)                      ||  
                  xmlt('WS_HTTP_HEADERS',l_header_xml)      ||
                  xmlt('WS_PAYLOAD','<![CDATA['||p_payload||']]>')
